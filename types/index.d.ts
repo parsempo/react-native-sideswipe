@@ -163,6 +163,12 @@ declare type CarouselProps<T> = {
    * should we use native driver for animation.
    */
   useNativeDriver?: boolean;
+
+  onGestureStart?: () => void;
+
+  onGestureRelease?: () => void;
+
+  onMomentumScrollEnd?: () => void;
 };
 
 declare class Carousel<T> extends Component<CarouselProps<T>> {}
